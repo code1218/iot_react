@@ -4,8 +4,15 @@ import './index.css';
 import App from './App';
 import Promise1 from './study/Promise1';
 import AsyncAwait, {test1, test2} from './study/AsyncAwait';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import UserRoute from './routes/UserRoute';
+import Main from './Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<App />);
+root.render(
+  <BrowserRouter>
+    <Main />
+  </BrowserRouter>
+);
 
